@@ -24,8 +24,7 @@ import com.crm.qa.base.TestBase;
 public class TestUtile extends TestBase {
 	public static long page_load_TimeOut=20;
 	public static long Implicit_wait=10;
-	public static String TESTDATA_SHEET_PATH = "D:\\selenium\\freeCRMtest\\src\\main\\java\\com"+
-	"\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
+	public static String TESTDATA_SHEET_PATH = "D:\\eclipse\\GitHub\\crm-project\\src\\main\\java\\com\\crm\\qa\\testdata\\FreeCrmTestData.xlsx";
 	
 	static Workbook book;
 	static Sheet sheet;
@@ -68,7 +67,7 @@ public class TestUtile extends TestBase {
 	
 	public static void takeScreenshotAtEndOfTest() throws IOException {
 		File scrFile = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-		String currentDir = "D:\\selenium\\freeCRMtest\\screenshots";
+		String currentDir = "D:\\eclipse\\GitHub\\crm-project\\screenshots";
 		FileHandler.copy(scrFile, new File(currentDir + "\\screenshot\\" + System.currentTimeMillis() + ".png"));
 		
 
